@@ -24,6 +24,7 @@ Requires:	apache >= 2.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	coredumper-devel
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_coredumper uses the CoreDumper library from Google to fetch a
