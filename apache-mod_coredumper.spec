@@ -6,7 +6,7 @@
 Summary:	DSO module for the apache Web server
 Name:		apache-%{mod_name}
 Version:	0.1.0
-Release:	%mkrel 11
+Release:	%mkrel 12
 License:	Apache License
 Group:		System/Servers
 URL:		http://www.outoforder.cc/projects/apache/mod_coredumper/
