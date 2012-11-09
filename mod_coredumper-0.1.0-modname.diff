@@ -1,0 +1,18 @@
+--- src/Makefile.am	2005-03-18 04:36:23.000000000 +0100
++++ src/Makefile.am.oden	2005-03-19 16:12:41.925631691 +0100
+@@ -1,10 +1,10 @@
+-CLEANFILES = .libs/libmod_coredumper *~
++CLEANFILES = .libs/mod_coredumper *~
+ 
+-libmod_coredumper_la_SOURCES = mod_coredumper.c
+-libmod_coredumper_la_CFLAGS = -Wall ${MODULE_CFLAGS}
+-libmod_coredumper_la_LDFLAGS =  -rpath ${AP_LIBEXECDIR} -module -avoid-version ${MODULE_LDFLAGS}
++mod_coredumper_la_SOURCES = mod_coredumper.c
++mod_coredumper_la_CFLAGS = -Wall ${MODULE_CFLAGS}
++mod_coredumper_la_LDFLAGS =  -rpath ${AP_LIBEXECDIR} -module -avoid-version ${MODULE_LDFLAGS}
+ 
+-lib_LTLIBRARIES = libmod_coredumper.la 
++lib_LTLIBRARIES = mod_coredumper.la 
+ 
+ make_so: ${lib_LTLIBRARIES}
+ 	@if test ! -L mod_coredumper.so ; then ln -s .libs/libmod_coredumper.so mod_coredumper.so ; fi
