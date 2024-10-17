@@ -9,7 +9,7 @@ Version:	0.1.0
 Release:	20
 License:	Apache License
 Group:		System/Servers
-URL:		http://www.outoforder.cc/projects/apache/mod_coredumper/
+URL:		https://www.outoforder.cc/projects/apache/mod_coredumper/
 Source0: 	http://www.outoforder.cc/downloads/mod_coredumper/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}
 Patch0:		mod_coredumper-0.1.0-modname.diff
